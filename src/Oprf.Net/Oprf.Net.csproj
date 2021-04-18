@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netstandard2.1</TargetFrameworks>
+    <Authors>Adam Craven</Authors>
+    <Company>Adam Craven</Company>
+    <PackageId>OPRF.NET</PackageId>
+    <Product>OPRF.NET</Product>
+    <Description>Oblivious Pseudorandom Functions (OPRFs) using Prime-Order Groups.</Description>
+    <Copyright>Copyright 2021 Adam Craven</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/channeladam/OPRF.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/channeladam/OPRF.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl/>
+    <PackageTags>OPRF,VOPRF,Oblivious,Pseudorandom,Cryptography,Protocol</PackageTags>
+    <PackageReleaseNotes>
+0.1.1-beta - Initial implementation of OPRF Base Mode with the ristretto255 + SHA-512 Cipher Suite.
+    </PackageReleaseNotes>
+    <IsPackable>true</IsPackable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSource>true</IncludeSource>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="libsodium" Version="1.0.18"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
